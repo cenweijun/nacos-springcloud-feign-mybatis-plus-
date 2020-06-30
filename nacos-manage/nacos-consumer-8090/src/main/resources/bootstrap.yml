@@ -1,0 +1,22 @@
+server:
+  port: 8090
+
+spring:
+  application:
+    name: nacos-consumer
+
+  cloud:
+    nacos:
+      config:
+        server-addr: 127.0.0.1:8848
+        file-extension: yml
+       # namespace: 405adfa4-2b7a-4a82-a29a-c7fea915aaac
+        group: DEFAULT_GROUP
+
+      discovery:
+        server-addr: 127.0.0.1:8848,127.0.0.1:8849,127.0.0.1:8850
+
+
+
+
+
